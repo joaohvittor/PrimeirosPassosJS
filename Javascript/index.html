@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function escondertexto(){
+            onclick="document.getElementById('sumido').style.display='none'";
+        }
+    </script>
+</head>
+<body>
+    <h1 id="textoxy"> Texto que vai ser alterado</h1>
+    <button type="button" onclick='document.getElementById("textoxy").innerHTML = "Hello Word"'>Clique aqui</button>
+    <hr>
+<button type="button" onclick="document.getElementById('FotoVetor').src='img/seleção.png'">Clique aqui para ver o escudo da seleçao brasileira</button>
+<img src="vetor.jpg" id="FotoVetor" alt="">
+
+    <button type="button" onclick="document.getElementById('FotoVetor').src='img/corinthians.png'">Clique aqui para ver o escudo do corinthians</button>
+
+    <!-- alterando css-->
+    <h3 id="textozz" style="font-size: 20px;">Este texto vai ser alterado</h3>
+    <button type="button" onclick="document.getElementById('textozz').style.fontSize='55px'">Clique aqui para aumentar o texto</button>
+    <button type="button" onclick="document.getElementById('textozz').style.fontSize='20px'">Clique aqui para voltar ao tamanho normal do texto</button>
+
+    <!--trocando display-->
+   <!-- <h3 id="sumido">Este texto vai sumir</h3>
+    <button type="button" onclick="document.getElementById('sumido').style.display='none'">Sumir</button>
+    <button type="button" onclick="document.getElementById('sumido').style.display=''">Voltar</button>
+-->
+
+    <!--
+        alternativa:
+        <button type="button" onclick="document.getElementById('sumido').style.display='block'">Voltar</button>
+    -->
+    <!--Funções-->
+    <h3 id="sumido" >Este texto vai sumir</h3>
+    <button type="button" onclick="escondertext()">Teste aqui</button>
+</body>
+</html>
